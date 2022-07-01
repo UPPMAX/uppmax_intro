@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNIC SENS and Bianca &mdash; UPPMAX intro course — part 1 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Software and tools" href="software.html" />
+    <link rel="prev" title="SNIC" href="snic.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> UPPMAX intro course — part 1
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux_basics.html">Basic toolkit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">More about UPPMAX</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview2.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">High Performance Computing — HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snic.html">SNIC</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SNIC SENS and Bianca</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sensitive-personal-data">Sensitive personal data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biancas-design">Bianca’s design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bianca-has-no-internet">Bianca has no Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#thinlinc">ThinLinc</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software and tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slurm_intro.html">Submitting jobs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UPPMAX intro course — part 1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>SNIC SENS and Bianca</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/bianca.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="snic-sens-and-bianca">
+<h1>SNIC SENS and Bianca<a class="headerlink" href="#snic-sens-and-bianca" title="Permalink to this headline"></a></h1>
+<section id="sensitive-personal-data">
+<h2>Sensitive personal data<a class="headerlink" href="#sensitive-personal-data" title="Permalink to this headline"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>When in doubt, contact your university&#39;s data protection officerLinks to an external site..
+Bianca is a great platform for computationally intensive research on sensitive personal data. It can also be useful for:
+    national and international collaboration on sensitive personal data (without a high compute need)
+    other types of sensitive data
+Bianca is not good for:
+    storing data
+    publishing data (unless the dataset is very popular among Bianca users, e.g. SwegenLinks to an external site., SIMPLERLinks to an external site.)
+</pre></div>
+</div>
+</section>
+<section id="biancas-design">
+<h2>Bianca’s design<a class="headerlink" href="#biancas-design" title="Permalink to this headline"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Bianca was designed
+    to make accidental data leaks difficult
+    to make correct data management as easy as possible
+    to emulate the HPC cluster environment that SNIC users were familiar with
+    to provide a maximum amount of resources
+    and to satisfy regulations.
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/biancaorganisation-01.png" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Bianca is only accessible from within Sunet (i.e. from university networks).
+The whole Bianca cluster (blue) contains hundreds of virtual project clusters (green), each of which is isolated from each other and the Internet.
+Data can be transferred to or from a virtual project cluster through the Wharf, which is a special file area that is visible from the Internet.
+
+
+
+When you log in to bianca.uppmax.uu.seLinks to an external site., your SSH or ThinLinc client first meets the blue Bianca login node.
+After checking your two-factor authentication, this server looks for your virtual project cluster.
+If it&#39;s present, then you are transferred to a login prompt on your cluster&#39;s login node. If not, then the virtual cluster is started.
+Inside each virtual project cluster, by default there is just a one-core login node. When you need more memory or more CPU power, you submit a job (interactive or batch), and an idle node will be moved into your project cluster.
+</pre></div>
+</div>
+</section>
+<section id="bianca-has-no-internet">
+<h2>Bianca has no Internet<a class="headerlink" href="#bianca-has-no-internet" title="Permalink to this headline"></a></h2>
+<p>… but we have “solutions”</p>
+<p>Data transfers:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>NGI Deliver through SUPR
+Transit server (transit.uppmax.uu.se)
+</pre></div>
+</div>
+<p>Software</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Modules library (almost same as Rackham)
+Local Conda repository
+Local Perl modules
+Local R packages
+
+
+
+More info at
+    https://www.uppmax.uu.se/support/user-guides/bianca-user-guide/Links to an external site.
+</pre></div>
+</div>
+</section>
+<section id="thinlinc">
+<h2>ThinLinc<a class="headerlink" href="#thinlinc" title="Permalink to this headline"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Bianca offers graphical login
+On web:
+    https://bianca.uppmax.uu.seLinks to an external site.
+    requires 2-factor authentication
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/Thinlinc2.jpg" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="snic.html" class="btn btn-neutral float-left" title="SNIC" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="software.html" class="btn btn-neutral float-right" title="Software and tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright UPPMAX.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

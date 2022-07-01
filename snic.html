@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNIC &mdash; UPPMAX intro course — part 1 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SNIC SENS and Bianca" href="bianca.html" />
+    <link rel="prev" title="High Performance Computing — HPC" href="hpc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> UPPMAX intro course — part 1
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux_basics.html">Basic toolkit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">More about UPPMAX</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview2.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">High Performance Computing — HPC</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SNIC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#snic-hpc-clusters">SNIC HPC Clusters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#locally-financed-systems-for-local-users">Locally financed systems for local users</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#snic-science-cloud-ssc">SNIC Science Cloud (SSC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#storage">STORAGE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snic-storage-swestore">SNIC Storage: Swestore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uppmax-storage">UPPMAX storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uppmax-storage-system-names">UPPMAX storage system names</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bianca.html">SNIC SENS and Bianca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software and tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slurm_intro.html">Submitting jobs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UPPMAX intro course — part 1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>SNIC</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/snic.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="snic">
+<h1>SNIC<a class="headerlink" href="#snic" title="Permalink to this headline"></a></h1>
+<section id="snic-hpc-clusters">
+<h2>SNIC HPC Clusters<a class="headerlink" href="#snic-hpc-clusters" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>UPPMAX:</p>
+<ul>
+<li><p>Rackham, Bianca, Snowy</p></li>
+</ul>
+</li>
+<li><p>PDC (KTH):</p>
+<ul>
+<li><p>Dardel</p></li>
+</ul>
+</li>
+<li><p>NSC, Linköping:</p>
+<ul>
+<li><p>Tetralith, Berzelius</p></li>
+</ul>
+</li>
+<li><p>HPC2N, Umeå:</p>
+<ul>
+<li><p>Kebnekaise</p></li>
+</ul>
+</li>
+<li><p>C3SE, Chalmers:</p>
+<ul>
+<li><p>Alvis</p></li>
+</ul>
+</li>
+</ul>
+<section id="locally-financed-systems-for-local-users">
+<h3>Locally financed systems for local users<a class="headerlink" href="#locally-financed-systems-for-local-users" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>LUNARC, Lund</p>
+<ul>
+<li><p>Aurora</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="snic-science-cloud-ssc">
+<h2>SNIC Science Cloud (SSC)<a class="headerlink" href="#snic-science-cloud-ssc" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>SNIC Science Cloud is currently a pilot project and not a production resource.</strong></p></li>
+<li><p>The UPPMAX cloud Dis (Swedish word for “haze”)  was introduced in October 2017 and upgraded during 2020.</p></li>
+<li><p>Dis is the east region in the SNIC Science Cloud together with Umeå University (north, HPC2N) and Chalmers University (west, C3SE). (Links to an external site.)</p></li>
+<li><p>https://www.uppmax.uu.se/resources/systems/the-uppmax-cloud/</p></li>
+</ul>
+</section>
+<section id="storage">
+<h2>STORAGE<a class="headerlink" href="#storage" title="Permalink to this headline"></a></h2>
+<section id="snic-storage-swestore">
+<h3>SNIC Storage: Swestore<a class="headerlink" href="#snic-storage-swestore" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The purpose of Swestore allocations, granted by Swedish National Allocations Committee (SNAC), is to provide large scale data storage for “live” or “working” research data, also known as active research data.</p></li>
+<li><p>https://www.snic.se/resources/swestore/’</p></li>
+</ul>
+</section>
+<section id="uppmax-storage">
+<h3>UPPMAX storage<a class="headerlink" href="#uppmax-storage" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Rackham storage: Crex &amp; Domus</p></li>
+<li><p>Bianca storage: Castor &amp; Cygnus</p></li>
+<li><p>NGI production system: Irma &amp; Lupus / Miarka &amp; Vulpes</p></li>
+<li><p>NGI delivery server: Grus</p></li>
+<li><p>Off-load storage: Lutra</p></li>
+</ul>
+</section>
+<section id="uppmax-storage-system-names">
+<h3>UPPMAX storage system names<a class="headerlink" href="#uppmax-storage-system-names" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hpc.html" class="btn btn-neutral float-left" title="High Performance Computing — HPC" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bianca.html" class="btn btn-neutral float-right" title="SNIC SENS and Bianca" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright UPPMAX.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

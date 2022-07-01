@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic toolkit &mdash; UPPMAX intro course — part 1 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Overview" href="overview2.html" />
+    <link rel="prev" title="Linux" href="linux.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> UPPMAX intro course — part 1
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux.html">Linux</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic toolkit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#we-will-cover-these-commands">We will cover these commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#navigation-and-file-management">Navigation and file management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#read-files-and-change-file-properties">Read files and change file properties</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#file-system-navigation">File system Navigation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pwd-where-are-you-now-print-name-of-current-working-directory">pwd — where are you now? “Print name of current/Working Directory”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ls-list-directory-contents">ls —list directory contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cd-change-the-shell-working-directory">cd — Change the shell working Directory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#copy-create-move">Copy, Create, Move</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mkdir-make-directories">mkdir — make directories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cp-copy-files-and-directories">cp — copy files and directories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scp-secure-copy-remote-file-copy-program">scp —secure copy (remote file copy program)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mv-move-rename-file">mv — move/rename file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#archiving">Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting">Deleting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rm-delete-files-or-directories">rm — delete files  or directories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rmdir-delete-an-empty-directory">rmdir — delete an empty directory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#help">Help</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#man-manual-look-up-the-right-flags">man — manual, look up the right flags</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lets-get-wild-with-wildcards">Let’s get wild with Wildcards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-files">Reading files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cat-concatenate-files-and-print-on-the-standard-output">cat - concatenate files and print on the standard output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#head-display-the-top-of-a-file">head — display the top of a file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tail-display-the-end-of-a-file">tail — display the end of a file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#less-read-a-whole-file">less — read a whole file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#file-permissions">File permissions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#changing-permissions">Changing permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chmod-hands-on">chmod — Hands-on</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">More about UPPMAX</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview2.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">High Performance Computing — HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snic.html">SNIC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bianca.html">SNIC SENS and Bianca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software and tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slurm_intro.html">Submitting jobs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UPPMAX intro course — part 1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Basic toolkit</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/linux_basics.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basic-toolkit">
+<h1>Basic toolkit<a class="headerlink" href="#basic-toolkit" title="Permalink to this headline"></a></h1>
+<p><img alt="Caption" src="_images/terminal.png" /></p>
+<section id="we-will-cover-these-commands">
+<h2>We will cover these commands<a class="headerlink" href="#we-will-cover-these-commands" title="Permalink to this headline"></a></h2>
+<section id="navigation-and-file-management">
+<h3>Navigation and file management<a class="headerlink" href="#navigation-and-file-management" title="Permalink to this headline"></a></h3>
+<ol class="arabic simple">
+<li><p>pwd  present directory</p></li>
+<li><p>ls  list content</p></li>
+<li><p>cd  change directory</p></li>
+<li><p>mkdir  make directory</p></li>
+<li><p>cp  copy</p></li>
+<li><p>scp  remotely copy</p></li>
+<li><p>mv  move</p></li>
+<li><p>rm  remove</p></li>
+<li><p>rmdir  remove empty directory</p></li>
+</ol>
+</section>
+<section id="read-files-and-change-file-properties">
+<h3>Read files and change file properties<a class="headerlink" href="#read-files-and-change-file-properties" title="Permalink to this headline"></a></h3>
+<ol class="arabic simple" start="10">
+<li><p>cat  print content on screen</p></li>
+<li><p>head  print first part</p></li>
+<li><p>tail  print last part</p></li>
+<li><p>less  browse content</p></li>
+<li><p>tar  compress or extract file</p></li>
+<li><p>chmod  change file permissions</p></li>
+<li><p>man  info about a command</p></li>
+</ol>
+</section>
+</section>
+<section id="file-system-navigation">
+<h2>File system Navigation<a class="headerlink" href="#file-system-navigation" title="Permalink to this headline"></a></h2>
+<section id="pwd-where-are-you-now-print-name-of-current-working-directory">
+<h3>pwd — where are you now? “Print name of current/Working Directory”<a class="headerlink" href="#pwd-where-are-you-now-print-name-of-current-working-directory" title="Permalink to this headline"></a></h3>
+<div class="highlight-bash= notranslate"><div class="highlight"><pre><span></span>$ pwd
+
+$ pwd -P 
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>-P gives you the physical path,</p>
+<ul>
+<li><p>ignores how you got there</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="ls-list-directory-contents">
+<h3>ls —list directory contents<a class="headerlink" href="#ls-list-directory-contents" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Type ls to display the contents of the current directory.
+</pre></div>
+</div>
+<p>$ ls -a</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   -a also shows hidden files and directories.
+</pre></div>
+</div>
+<p>$ ls -l</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    gives you listed and detailed information.
+</pre></div>
+</div>
+<p>$ ls -lt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   sorts things by time modified.
+</pre></div>
+</div>
+<p>$ ls –lrt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> -r gives reversed order, so in this case newest in last line.
+</pre></div>
+</div>
+<p>$ man ls</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> for complete information.
+TIP:  -$ man &lt;command&gt; works for almost any command!
+    scroll with arrows and quit with &quot;q&quot;.
+</pre></div>
+</div>
+</section>
+<section id="cd-change-the-shell-working-directory">
+<h3>cd — Change the shell working Directory<a class="headerlink" href="#cd-change-the-shell-working-directory" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>To change directory, use cd &lt;target&gt;
+</pre></div>
+</div>
+<p>$ cd /proj/introtouppmax</p>
+<p>$ pwd</p>
+<p>$ ls</p>
+<p>$ cd labs</p>
+<p>$ pwd</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Experiment with cd. Try adding spaces or extra / in various places.
+Use tab completion to avoid typos and typing “ls” a lot.
+
+
+
+Figure out the use of the following:
+</pre></div>
+</div>
+<p>$ cd -</p>
+<p>$ cd …</p>
+<p>$ cd</p>
+<p>$ cd ~</p>
+</section>
+</section>
+<section id="copy-create-move">
+<h2>Copy, Create, Move<a class="headerlink" href="#copy-create-move" title="Permalink to this headline"></a></h2>
+<section id="mkdir-make-directories">
+<h3>mkdir — make directories<a class="headerlink" href="#mkdir-make-directories" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Make sure you’re in your home directory ($ cd ~)
+</pre></div>
+</div>
+<p>$ mkdir uppmax-intro</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Go in there:
+</pre></div>
+</div>
+<p>$ cd uppmax-intro/</p>
+</section>
+<section id="cp-copy-files-and-directories">
+<h3>cp — copy files and directories<a class="headerlink" href="#cp-copy-files-and-directories" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Copy files with: cp &lt;source&gt; &lt;target&gt;
+Set target to &quot;.&quot; to keep name and to point at present directory.
+</pre></div>
+</div>
+<p>$ cp /proj/introtouppmax/labs/linux_tutorial/ .</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Well, that didn’t work. What does the error say?
+
+
+
+So... try
+</pre></div>
+</div>
+<p>$ cp -r /proj/introtouppmax/labs/linux_tutorial/ .</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>-r is for recursive, meaning including files and subdirectories!
+
+
+
+Move to your just created linux_tutorial/
+</pre></div>
+</div>
+<p>$ cd linux_tutorial</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Make a copy of the file “newfile” in the same directory:
+</pre></div>
+</div>
+<p>$ cp newfile copyfile</p>
+</section>
+<section id="scp-secure-copy-remote-file-copy-program">
+<h3>scp —secure copy (remote file copy program)<a class="headerlink" href="#scp-secure-copy-remote-file-copy-program" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Linux/MacOS: To copy data to/from Rackham, you can use scp from the terminal on your local machine:
+Upload
+</pre></div>
+</div>
+<p>[bob&#64;macbook]$ scp myinput bob&#64;rackham.uppmax.uu.se:~/copyofmyinput</p>
+<p>[bob&#64;macbook]$ scp myinput bob&#64;rackham.uppmax.uu.se:~/                       (keeping filename)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Download
+</pre></div>
+</div>
+<p>[bob&#64;macbook]$ scp bob&#64;rackham.uppmax.uu.se:~/mydata copyofmydata</p>
+<p>[bob&#64;macbook]$ scp bob&#64;rackham.uppmax.uu.se:~/mydata .                       (keeping file name)</p>
+</section>
+<section id="mv-move-rename-file">
+<h3>mv — move/rename file<a class="headerlink" href="#mv-move-rename-file" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Moving files works just like copying files:
+mv &lt;source&gt; &lt;target&gt;
+Move the copy you just made to another place:
+</pre></div>
+</div>
+<p>$ mv copyfile …/</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Rename it.
+</pre></div>
+</div>
+<p>$ mv …/copyfile …/renamedfile</p>
+</section>
+</section>
+<section id="archiving">
+<h2>Archiving<a class="headerlink" href="#archiving" title="Permalink to this headline"></a></h2>
+<p>tar — archiving and compression</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>We’re going to need more files.
+</pre></div>
+</div>
+<p>$ tar -vxzf files.tar.gz</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The flags mean:
+    -verbosely
+    -extract
+    -zipped
+    -file
+You should see a list of files being extracted
+</pre></div>
+</div>
+</section>
+<section id="deleting">
+<h2>Deleting<a class="headerlink" href="#deleting" title="Permalink to this headline"></a></h2>
+<section id="rm-delete-files-or-directories">
+<h3>rm — delete files  or directories<a class="headerlink" href="#rm-delete-files-or-directories" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Deleting files works just like copying or moving them:
+    rm &lt;target&gt;
+
+Try it out:
+</pre></div>
+</div>
+<p>$ rm …/renamedfile</p>
+<p>$ rm this_is_empty</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>hmmmm...
+</pre></div>
+</div>
+</section>
+<section id="rmdir-delete-an-empty-directory">
+<h3>rmdir — delete an empty directory<a class="headerlink" href="#rmdir-delete-an-empty-directory" title="Permalink to this headline"></a></h3>
+<p>Need another command to delete directories</p>
+<p>$ rmdir this_is_empty</p>
+<p>$ rmdir this_has_a_file</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Is there a way to use rm to delete directories?
+
+
+
+Recursive commands are applied to directories and their contents
+</pre></div>
+</div>
+</section>
+</section>
+<section id="help">
+<h2>Help<a class="headerlink" href="#help" title="Permalink to this headline"></a></h2>
+<section id="man-manual-look-up-the-right-flags">
+<h3>man — manual, look up the right flags<a class="headerlink" href="#man-manual-look-up-the-right-flags" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Nobody can remember whether it’s -R or -r for recursive, or if -f lets you choose a file or forces an action.
+</pre></div>
+</div>
+<p>$ man ls</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    shows you how to use ls and all its options
+Type ‘/&lt;keyword&gt;’ to search for “&lt;keyword&gt;”, use ‘n’ and ‘N’ to scan through hits.
+Scroll with arrows.
+Type ‘q’ to quit.
+Spend some time now to browse the man pages for the commands you’ve just learned!
+</pre></div>
+</div>
+<p>Not only user commands!</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use sections like
+
+    man 2 write
+</pre></div>
+</div>
+<p>MANUAL SECTIONS
+The standard sections of the manual include:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   1      User Commands
+
+   2      System Calls
+
+   3      C Library Functions
+
+   4      Devices and Special Files
+
+   5      File Formats and Conventions
+
+   6      Games et. Al.
+
+   7      Miscellanea
+
+   8      System Administration tools and Deamons
+</pre></div>
+</div>
+</section>
+</section>
+<section id="lets-get-wild-with-wildcards">
+<h2>Let’s get wild with Wildcards<a class="headerlink" href="#lets-get-wild-with-wildcards" title="Permalink to this headline"></a></h2>
+<p><img alt="Caption" src="img/wildcards_bear.png" /></p>
+<p>$ ls many_files</p>
+<p>$ ls many_files/*.txt</p>
+<p>$ ls many_files/file_1*1.docx</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Want to clean out temporary files ending in .tmp in all the subdirectories?
+</pre></div>
+</div>
+<p>$ rm <em>/</em>.tmp</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>NB! It could be wise to do ls -a */*.tmp first to see what will be deleted...
+
+
+
+Exercise:  Create a new directory and move all .txt files in many_files to it.
+</pre></div>
+</div>
+</section>
+<section id="reading-files">
+<h2>Reading files<a class="headerlink" href="#reading-files" title="Permalink to this headline"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>In Linux, you can (if you wish) also display files without being able to change them
+</pre></div>
+</div>
+<p>$ cd old_project</p>
+<p>$ ls</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Hmm, which of these files are useful?
+</pre></div>
+</div>
+<section id="cat-concatenate-files-and-print-on-the-standard-output">
+<h3>cat - concatenate files and print on the standard output<a class="headerlink" href="#cat-concatenate-files-and-print-on-the-standard-output" title="Permalink to this headline"></a></h3>
+<p><img alt="Caption" src="_images/cat.png" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cat dumps the contents of files to the terminal as text
+</pre></div>
+</div>
+<p>$ cat the_best</p>
+<p>Yummy!</p>
+<p>$ cat a</p>
+<p>???</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Concatenate files with this wizardry:
+</pre></div>
+</div>
+<p>$ cat a the_best &gt; combinedfiles.txt</p>
+</section>
+<section id="head-display-the-top-of-a-file">
+<h3>head — display the top of a file<a class="headerlink" href="#head-display-the-top-of-a-file" title="Permalink to this headline"></a></h3>
+<p><img alt="Caption" src="_images/head.png" /></p>
+<p>$ head a</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>You can choose how many lines to display (default 10)
+</pre></div>
+</div>
+<p>$ head -n 4 a</p>
+</section>
+<section id="tail-display-the-end-of-a-file">
+<h3>tail — display the end of a file<a class="headerlink" href="#tail-display-the-end-of-a-file" title="Permalink to this headline"></a></h3>
+<p><img alt="Caption" src="_images/tail.png" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Tail is the same as head, but for the other end.
+</pre></div>
+</div>
+<p>$ tail -n 5 a</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Handy to look at log files or to figure out the structure of a text file.
+</pre></div>
+</div>
+</section>
+<section id="less-read-a-whole-file">
+<h3>less — read a whole file<a class="headerlink" href="#less-read-a-whole-file" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cat doesn’t really work for long files
+</pre></div>
+</div>
+<p>$ less a</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Search with ‘/keyword’ and ‘n’/’N’
+Hit ‘q’ to quit.
+scroll with arrows.
+&quot;man&quot; uses &quot;less&quot;!
+</pre></div>
+</div>
+<p>“less is more”</p>
+</section>
+</section>
+<section id="file-permissions">
+<h2>File permissions<a class="headerlink" href="#file-permissions" title="Permalink to this headline"></a></h2>
+<p><img alt="Caption" src="_images/permission.png" /></p>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h3>
+<div class="highlight-bash= notranslate"><div class="highlight"><pre><span></span>$ ls -l
+
+  drwxrwxr-x 2 marcusl marcusl 4096 Sep 19 2012 external_hdd 
+  -rwxr-xr-x 1 marcusl marcusl 17198 Jul 16 14:12 files.tar.gz
+</pre></div>
+</div>
+<ul>
+<li><p>Leading symbol:</p>
+<ul class="simple">
+<li><p>d directory</p></li>
+<li><ul>
+<li><p>regular file</p></li>
+</ul>
+</li>
+<li><p>l symbolic link (more on this tomorrow)</p></li>
+<li><p>Others exist, but you can ignore them for now</p></li>
+</ul>
+<div class="highlight-bash= notranslate"><div class="highlight"><pre><span></span>$ ls -l
+
+drwxrwxr-x 2 marcusl marcusl 4096 Sep 19 2012 external_hdd
+
+-rwxr-xr-x 1 marcusl marcusl 17198 Jul 16 14:12 files.tar.gz
+</pre></div>
+</div>
+</li>
+<li><p>Three sets of “rwx” permissions</p>
+<ul class="simple">
+<li><p>rwx: r ead, w rite, ex ecute</p></li>
+<li><p>User: the user account that owns the file (usually the one that created it)</p></li>
+<li><p>Group: the group that owns the file (usually the project group in /proj/xyz or  the user’s group elsewhere</p></li>
+<li><p>Others: everyone else on the system (literally a thousand strangers)</p></li>
+</ul>
+</li>
+<li><p>r – read</p>
+<ul class="simple">
+<li><p>Files: Read the contents of the file</p></li>
+<li><p>Directories: List the files in the directory</p></li>
+</ul>
+</li>
+<li><p>w – write</p>
+<ul class="simple">
+<li><p>Files: Modify the file</p></li>
+<li><p>Directories: Add, rename, or delete files in the directory</p></li>
+</ul>
+</li>
+<li><p>x – execute</p>
+<ul class="simple">
+<li><p>Files: Run the file as a program</p></li>
+<li><p>Directories: Traverse the directory (e.g. with “cd”)</p></li>
+</ul>
+</li>
+<li><p>Now try:</p>
+<div class="highlight-bash= notranslate"><div class="highlight"><pre><span></span>$ ls -l /proj/introtouppmax/
+</pre></div>
+</div>
+</li>
+<li><p>Huh, rwxrwsr-x?</p></li>
+<li><p>‘s’ in the group means ‘x’ but with gid bit set ( g roup id of creator not launcher).</p></li>
+<li><p>‘S’ means ‘-’ with gid bit set (rarely seen).</p></li>
+<li><p>Among other things, this makes the default group for new files/subdirectories the g2020018 group.</p></li>
+</ul>
+</section>
+</section>
+<section id="changing-permissions">
+<h2>Changing permissions<a class="headerlink" href="#changing-permissions" title="Permalink to this headline"></a></h2>
+<p><strong>chmod</strong> — change file mode bits</p>
+<ul>
+<li><p>Files with w can be modified and destroyed by accident. Protect your input data!</p></li>
+<li><p>If you want to share data or scripts with a person not in your project (e.g. support staff like me), you can!</p></li>
+<li><p>If you want to keep non-members from even seeing which files you have, you can!</p></li>
+<li><p>chmod <mode> <files></p></li>
+<li><p><mode> can be e.g.</p>
+<ul class="simple">
+<li><p>u+x (let you run a script you just wrote)</p></li>
+<li><p>–w (no write permissions for anyone)</p></li>
+<li><p>g+rw (let group members read and edit this file)</p></li>
+<li><p>g=xw (let group members go into your directory and put files there, but not see which files are there)</p></li>
+</ul>
+</li>
+<li><p>chmod takes flags as usual, e.g.
+-R for recursive (i.e. all files and sub-directories therein)</p></li>
+<li><p>Online, you will come across e.g. “chmod 755”, what does this mean? It’s a “octal bit mask”:</p>
+<ul>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 7 = 4 + 2 + 1 = r + w + x
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 5 = 4 + 0 + 1 = r + x
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Chmod — change file mode bits (man page)</p></li>
+<li><p>What number would r+w be?</p></li>
+</ul>
+</section>
+<section id="chmod-hands-on">
+<h2>chmod — Hands-on<a class="headerlink" href="#chmod-hands-on" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>In the linux_tutorial directory, find important files and old saved data that you wouldn’t want to lose.</p>
+<ul>
+<li><p>Directories: important_results/, old_project/</p></li>
+<li><p>File: last_years_data</p></li>
+</ul>
+</li>
+<li><p>Use chmod to remove write permission from those files and directories (use the -R flag to also do the files in the directories).</p>
+<ul>
+<li><p>Take a moment to play around with chmod and explore the effects of permissions on files and directories.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>More about bash command line and scripts on Tuesday until Wednesday!</strong></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="linux.html" class="btn btn-neutral float-left" title="Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="overview2.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright UPPMAX.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

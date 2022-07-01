@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux &mdash; UPPMAX intro course — part 1 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Basic toolkit" href="linux_basics.html" />
+    <link rel="prev" title="Login" href="login.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> UPPMAX intro course — part 1
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-linux">What is Linux?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux-comes-in-different-distributions-dialects-or-say-flavours">Linux comes in different distributions, dialects or, say, flavours.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-command-line">Using the command line</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line-with-bash-bourne-again-shell">Command line with bash (Bourne Again Shell)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-prompt">The prompt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#program-flags-and-files">Program, flags, and files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-bash-command">Example bash command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tab-completion">Tab Completion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-files">Editing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#file-text-editors">File/text editors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#typical-sources-of-error">Typical sources of error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#caution">Caution!!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linux_basics.html">Basic toolkit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">More about UPPMAX</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview2.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">High Performance Computing — HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snic.html">SNIC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bianca.html">SNIC SENS and Bianca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software and tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slurm_intro.html">Submitting jobs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UPPMAX intro course — part 1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Linux</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/linux.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="linux">
+<h1>Linux<a class="headerlink" href="#linux" title="Permalink to this headline"></a></h1>
+<section id="what-is-linux">
+<h2>What is Linux?<a class="headerlink" href="#what-is-linux" title="Permalink to this headline"></a></h2>
+<p><img alt="Content" src="_images/pingvin.png" /></p>
+<ul class="simple">
+<li><p>Daily speaking: The Linux Operating system is a UNIX like and UNIX compatible Operating system.</p></li>
+<li><p>Linux is a Kernel on which many different programs can run.</p></li>
+<li><p>The shell (bash, sh, ksh, csh, tcsh and many more) is one such program</p></li>
+</ul>
+<p><img alt="Content" src="_images/images.jfif" /></p>
+<ul class="simple">
+<li><p>Actually, for it to be an OS, it is supplied with GNU software and other additions giving us the name GNU/Linux.</p></li>
+</ul>
+<p><img alt="Content" src="_images/gnu.png" /></p>
+<ul class="simple">
+<li><p>Linux has a multiuser platform at its base which means permissions and security comes easy.</p></li>
+</ul>
+<section id="linux-comes-in-different-distributions-dialects-or-say-flavours">
+<h3>Linux comes in different distributions, dialects or, say, flavours.<a class="headerlink" href="#linux-comes-in-different-distributions-dialects-or-say-flavours" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Uppmax runs CentOS</p></li>
+</ul>
+<p><img alt="Content" src="_images/flavours.png" /></p>
+</section>
+</section>
+<section id="using-the-command-line">
+<h2>Using the command line<a class="headerlink" href="#using-the-command-line" title="Permalink to this headline"></a></h2>
+<section id="command-line-with-bash-bourne-again-shell">
+<h3>Command line with bash (Bourne Again Shell)<a class="headerlink" href="#command-line-with-bash-bourne-again-shell" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>A Unix shell and command language.</p></li>
+<li><p>Often default shell</p></li>
+</ul>
+<p><img alt="Content" src="_images/shell.jpg" /></p>
+<ul class="simple">
+<li><p>The command-line interface: the bash prompt $</p></li>
+<li><p>bash can be seen as a program that finds and runs other programs</p></li>
+<li><p>bash is scripting language that is referred to as a shell</p>
+<ul>
+<li><p>(because it sits around the kernel making it easy to interact with)</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Content" src="_images/unix_architecture.jpg" /></p>
+</section>
+<section id="the-prompt">
+<h3>The prompt<a class="headerlink" href="#the-prompt" title="Permalink to this headline"></a></h3>
+<p>[info]$ program word1 word2 word3 […]</p>
+<ul>
+<li><p>[info] is configurable, and usually tells you who you are, on what system, and where in the file system.</p>
+<ul>
+<li><p>Example:</p>
+<div class="highlight-bash= notranslate"><div class="highlight"><pre><span></span>  [bjornc@rackham3 linux_tutorial]$
+</pre></div>
+</div>
+</li>
+<li><p>For changing info (only for advanced users!):</p>
+<ul class="simple">
+<li><p>https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html (Links to an external site.)</p></li>
+</ul>
+</li>
+<li><p>The program to run is the first word</p></li>
+<li><p>All words are separated by spaces</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="program-flags-and-files">
+<h3>Program, flags, and files<a class="headerlink" href="#program-flags-and-files" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Input to the program:</p>
+<ul>
+<li><p>Flags: specific single letters or words that change the behaviour of a program.</p></li>
+<li><p>Arguments: text given to the program when started, e.g. file names.</p></li>
+<li><p>Terminal input: text given to the program while it runs.</p></li>
+</ul>
+</li>
+<li><p>Output from the program:</p>
+<ul>
+<li><p>Most Linux programs output to the terminal.</p></li>
+<li><p>Some programs also write to files.</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Content" src="_images/folders.png" /></p>
+</section>
+<section id="example-bash-command">
+<h3>Example bash command<a class="headerlink" href="#example-bash-command" title="Permalink to this headline"></a></h3>
+<p><img alt="Content" src="_images/mv_inbox.png" /></p>
+<p><img alt="Content" src="_images/program_flags.png" /></p>
+<ul class="simple">
+<li><p>Terminal screen shows</p></li>
+</ul>
+<p><img alt="Content" src="_images/screen.png" /></p>
+</section>
+<section id="tab-completion">
+<h3>Tab Completion<a class="headerlink" href="#tab-completion" title="Permalink to this headline"></a></h3>
+<p><img alt="Content" src="_images/tab.png" /></p>
+<ul class="simple">
+<li><p>Whenever you’re writing a path or filename on the bash prompt, you can strike the ‘tab’ key to
+ask Bash to complete what you’re writing.</p></li>
+<li><p>Get in the habit of this — it will save you many hours!</p></li>
+</ul>
+</section>
+<section id="editing-files">
+<h3>Editing files<a class="headerlink" href="#editing-files" title="Permalink to this headline"></a></h3>
+<p><img alt="Content" src="_images/edit.png" /></p>
+<section id="file-text-editors">
+<h4>File/text editors<a class="headerlink" href="#file-text-editors" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>gedit (graphical user interface — GUI, needs X-server)</p></li>
+<li><p>Also graphical editor within MobaXterm</p></li>
+<li><p>nano (keyboard shortcuts shown on-screen)</p>
+<ul>
+<li><p>Cheatsheet: http://staffwww.fullcoll.edu/sedwards/nano/UsefulNanoKeyCommands.html (Links to an external site.)</p>
+<ul>
+<li><p>(^ = Ctrl, M = meta key)</p>
+<ul>
+<li><p>(Windows M = Alt)</p></li>
+<li><p>(On Mac: in the Terminal.app go to Preferences -&gt; Settings -&gt; Keyboard and turn on “Use option as meta key”: then M = Alt</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>vim (fast and powerful, once you learn it)</p>
+<ul>
+<li><p>on UPPMAX started with command “vi”</p></li>
+<li><ol class="arabic simple">
+<li><p>Insert mode (type like normal text editor. Press i for insert mode)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Command mode (give commands to the editor to get things done . Press ESC for command mode)</p></li>
+</ol>
+</li>
+<li><p>Cheatsheet: https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started (Links to an external site.)</p></li>
+</ul>
+</li>
+<li><p>gvim vim with a GUI, lots of features very Fast</p></li>
+<li><p>emacs (fast and powerful, once you learn it)</p>
+<ul>
+<li><p>Cheatsheet: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf (Links to an external site.)</p>
+<ul>
+<li><p>(C = Ctrl)</p></li>
+</ul>
+</li>
+<li><p>also With GUI</p></li>
+<li><p>$ emacs –nw</p>
+<ul>
+<li><p>keeps you in terminal window.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>When starting the graphical versions, add “&amp;” to be able to use the command line while program is open.</p>
+<ul>
+<li><p>$ gedit &amp;</p></li>
+<li><p>If not, you can Ctrl+z and type bg to send program to background.</p></li>
+</ul>
+</li>
+<li><p><strong>Try them out and pick one favorite editor!</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="typical-sources-of-error">
+<h3>Typical sources of error<a class="headerlink" href="#typical-sources-of-error" title="Permalink to this headline"></a></h3>
+<p><img alt="Content" src="_images/cross.png" /></p>
+<ul class="simple">
+<li><p>Capitalization matters in file names and program names</p></li>
+<li><p>Spaces matter.</p>
+<ul>
+<li><p>Always have a space after the program name.</p></li>
+<li><p>Don’t add spaces within file names.</p></li>
+</ul>
+</li>
+<li><p>Check that you are in the right place in the file system.</p></li>
+<li><p>File permissions. Check that the right read,write and execute permission are set.</p></li>
+</ul>
+</section>
+<section id="caution">
+<h3>Caution!!<a class="headerlink" href="#caution" title="Permalink to this headline"></a></h3>
+<p><img alt="Content" src="_images/caution.png" /></p>
+<ul>
+<li><p>Some words of warning:</p>
+<ul class="simple">
+<li><p>There is no undo for</p>
+<ul>
+<li><p>copy (cp),</p></li>
+<li><p>move (mv), and</p></li>
+<li><p>remove (rm).</p></li>
+</ul>
+</li>
+<li><p><strong>Beware of overwriting files and deleting the wrong ones.</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Tip: make “rm” ask if you really want to erase:</strong></p>
+<ul>
+<li><p>Within a session: Type in the command prompt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>alias rm=‘rm -i’
+</pre></div>
+</div>
+</li>
+<li><p>Override asking with</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>rm –f &lt;&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Edit file “.bashrc” in /home directory by adding the alias line for this to start everytime.</p></li>
+</ul>
+</li>
+<li><p>This will also work for mv and cp!</p></li>
+<li><p>If you do destroy your data, email UPPMAX support, we may be able to help.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="login.html" class="btn btn-neutral float-left" title="Login" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="linux_basics.html" class="btn btn-neutral float-right" title="Basic toolkit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright UPPMAX.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
